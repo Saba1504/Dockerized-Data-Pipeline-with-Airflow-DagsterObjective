@@ -60,16 +60,14 @@ SELECT * FROM stock_data;
 
 ## File Structure
 \`\`\`
-.
 ├── dags/
-│   └── stock_data_dag.py       # Airflow DAG
-├── fetch_and_store.py           # Python script for fetching and storing stock data
-├── docker-compose.yml           # Docker Compose file
-├── requirements.txt             # Python dependencies
-├── logs/                        # Airflow logs (auto-generated)
-├── plugins/                     # Airflow plugins (if any)
+│ └── stock_data_dag.py # Airflow DAG
+├── fetch_and_store.py # Python script for fetching and storing stock data
+├── docker-compose.yml # Docker Compose file
+├── requirements.txt # Python dependencies
+├── logs/ # Airflow logs (auto-generated)
+├── plugins/ # Airflow plugins (if any)
 └── README.md
-
 \`\`\`
 
 ---
