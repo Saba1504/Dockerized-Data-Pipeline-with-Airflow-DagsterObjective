@@ -56,22 +56,6 @@ docker exec -it <postgres-container-id> psql -U airflow -d airflow
 # Then in psql:
 SELECT * FROM stock_data;
 
----
-
-## File Structure
-\`\`\`
-├── dags/
-│ └── stock_data_dag.py # Airflow DAG
-├── fetch_and_store.py # Python script for fetching and storing stock data
-├── docker-compose.yml # Docker Compose file
-├── requirements.txt # Python dependencies
-├── logs/ # Airflow logs (auto-generated)
-├── plugins/ # Airflow plugins (if any)
-└── README.md
-\`\`\`
-
----
-
 ## Environment Variables
 The pipeline uses the following environment variables for PostgreSQL credentials:
 - \`POSTGRES_HOST\` (default: \`postgres\`)
