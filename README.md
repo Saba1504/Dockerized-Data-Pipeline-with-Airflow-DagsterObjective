@@ -55,7 +55,6 @@ Connect to Postgres to check inserted stock data:
 docker exec -it <postgres-container-id> psql -U airflow -d airflow
 # Then in psql:
 SELECT * FROM stock_data;
-\`\`\`
 
 ---
 
@@ -70,6 +69,7 @@ SELECT * FROM stock_data;
 ├── logs/                        # Airflow logs (auto-generated)
 ├── plugins/                     # Airflow plugins (if any)
 └── README.md
+
 \`\`\`
 
 ---
@@ -102,6 +102,3 @@ These are already defined in \`docker-compose.yml\`.
 
 ---
 
-## Author
-Saba Khan
-EOL
